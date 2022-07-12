@@ -1,0 +1,23 @@
+.banner > .MuiGrid-container .MuiGrid-item {
+  z-index: 2;
+}
+.banner .heroPara h4 {
+  margin: 0;
+  color: var(--light-green);
+  font-size: 2.3rem !important;
+}
+@media only screen and (max-width: 600px) {
+  .banner .heroPara h4 {
+    font-size: 1.8rem !important;
+  }
+}
+.banner .heroPara p {
+  color: #fff !important;
+  font-family: var(--heading-font) !important;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 600px) {
+  .banner .heroPara p {
+    font-size: 1.3rem !important;
+  }
+}/*# sourceMappingURL=SimpleHero.css.map */

@@ -1,0 +1,22 @@
+.bluebtn {
+  background-color: #115278 !important;
+  padding: 0.8rem 1.6rem !important;
+  border-radius: 50rem !important;
+  margin: 0 1rem 0.3rem 0 !important;
+}
+.bluebtn:hover {
+  background-image: linear-gradient(to right, #115278 51%, #1ebeb6 100%);
+}
+.bluebtn a {
+  color: #fff !important;
+  font-size: 1.1rem;
+  font-family: var(--heading-font) !important;
+}
+@media only screen and (max-width: 576px) {
+  .bluebtn {
+    padding: 0.4rem 0.8rem;
+  }
+  .bluebtn a {
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=bluebtn.css.map */

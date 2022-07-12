@@ -1,0 +1,10 @@
+#paymentOptSec .swiper-button-prev, #paymentOptSec .swiper-button-next {
+  color: var(--blue);
+}
+#paymentOptSec .swiper-button-prev::after, #paymentOptSec .swiper-button-next::after {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+#paymentOptSec h2 {
+  font-size: 2.3rem;
+}/*# sourceMappingURL=paymentOpt.css.map */

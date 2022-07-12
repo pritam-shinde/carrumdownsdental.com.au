@@ -1,0 +1,50 @@
+#aboutSec img.img1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+#aboutSec #aboutSecContainer {
+  background-color: #1ebdb6 !important;
+}
+#aboutSec #aboutSecContainer .imageContainer img {
+  transform: translateY(-22%);
+  -webkit-transform: translateY(-22%);
+  -moz-transform: translateY(-22%);
+  -ms-transform: translateY(-22%);
+  -o-transform: translateY(-22%);
+}
+#aboutSec #aboutSecContainer .textContainer h1 {
+  font-size: 2.68rem;
+  font-family: var(--heading-font) !important;
+  color: var(--blue);
+}
+#aboutSec #aboutSecContainer .textContainer h2 {
+  color: #fff;
+  font-size: 2.3rem;
+}
+#aboutSec #aboutSecContainer .textContainer p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.719);
+  text-align: justify;
+}
+@media only screen and (max-width: 576px) {
+  #aboutSec .textContainer h1 {
+    font-size: 2rem !important;
+  }
+  #aboutSec .textContainer h2 {
+    font-size: 1.5rem;
+  }
+  #aboutSec .textContainer p {
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  #aboutSec #aboutSecContainer .imageContainer img {
+    transform: translateY(0%);
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    -ms-transform: translateY(0%);
+    -o-transform: translateY(0%);
+  }
+}/*# sourceMappingURL=aboutsec.css.map */

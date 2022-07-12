@@ -1,0 +1,20 @@
+#contactSec #mapContainer {
+  position: relative;
+}
+#contactSec #mapContainer img.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+#contactSec #contactContainer h3 {
+  color: var(--light-green);
+  font-family: var(--heading-font) !important;
+  font-size: 2.7rem;
+}
+#contactSec #contactContainer h4 {
+  font-size: 1.5rem;
+  color: var(--blue);
+  font-family: var(--heading-font) !important;
+}/*# sourceMappingURL=contact.css.map */

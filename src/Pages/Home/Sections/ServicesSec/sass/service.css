@@ -1,0 +1,8 @@
+#service {
+  margin: 4rem 0;
+}
+@media only screen and (max-width: 1199px) {
+  #service {
+    margin: 2rem 0;
+  }
+}/*# sourceMappingURL=service.css.map */

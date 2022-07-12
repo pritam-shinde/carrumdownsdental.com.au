@@ -1,0 +1,51 @@
+#singleBlog h2 {
+  font-size: 2.2rem !important;
+  font-family: var(--heading-font) !important;
+}
+#singleBlog h3 {
+  font-size: 1.8rem !important;
+  font-family: var(--heading-font) !important;
+}
+#singleBlog h4 {
+  font-size: 1.4rem !important;
+  font-family: var(--heading-font) !important;
+}
+#singleBlog h5 {
+  font-size: 1.5rem !important;
+  font-family: var(--heading-font) !important;
+}
+#singleBlog h6 {
+  font-size: 0.8rem !important;
+  font-family: var(--heading-font) !important;
+}
+#singleBlog p {
+  font-size: 1.1rem !important;
+  line-height: 1.8 !important;
+  margin-bottom: 1.1rem !important;
+  color: #5a5a5a;
+}
+@media only screen and (max-width: 576px) {
+  #singleBlog h2 {
+    font-size: 2rem !important;
+    font-family: var(--heading-font) !important;
+  }
+  #singleBlog h3 {
+    font-size: 1.6rem !important;
+    font-family: var(--heading-font) !important;
+  }
+  #singleBlog h4 {
+    font-size: 1.2rem !important;
+    font-family: var(--heading-font) !important;
+  }
+  #singleBlog h5 {
+    font-size: 1rem;
+    font-family: var(--heading-font) !important;
+  }
+  #singleBlog h6 {
+    font-size: 0.8rem !important;
+    font-family: var(--heading-font) !important;
+  }
+}
+#singleBlog #review h5 {
+  font-size: 2rem !important;
+}/*# sourceMappingURL=SingleBlog.css.map */

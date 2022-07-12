@@ -1,0 +1,25 @@
+.greenbtn{
+    background-color:#32cfc8 !important;
+    padding: 0.8rem 1.6rem  !important;
+    border-radius: 50rem !important;
+
+    &:hover{
+        background-image: linear-gradient(to right,#115278 51%,#1ebeb6 100%);
+    }
+
+    & a{
+        color: #fff !important;
+        font-size: 1.1rem;
+        font-family: var(--heading-font) !important;
+    }
+
+    @media only screen and (max-width: 576px){
+        &{
+            padding: 0.4rem 0.8rem;
+
+            & a{
+                font-size: 0.8rem;
+            }
+        }
+    }
+}

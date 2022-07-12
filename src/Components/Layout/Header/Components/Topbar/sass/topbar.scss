@@ -1,0 +1,35 @@
+#topbar {
+    & #topbarWrapper {
+        border-bottom: 1px solid rgba(255, 255, 255, .1);
+
+        & p,
+        & p span a {
+            font-size: 0.8rem;
+            font-family: var(--para-font);
+            color: #ffffffae;
+            margin-right: 0.5rem;
+
+            & svg {
+                margin-right: 0.3rem;
+            }
+        }
+
+        & svg {
+            fill: #115278 !important;
+            font-size: 1rem;
+        }
+    }
+
+    @media only screen and (max-width: 1199px){
+        &{
+            display: none;
+        }
+    }
+
+    @media only screen and (min-width: 1200px){
+        &{
+            display: block;
+        }
+    }
+
+}

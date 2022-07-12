@@ -1,0 +1,35 @@
+.dropdownMenu {
+  position: absolute;
+  top: 4rem;
+  width: 14rem;
+  list-style-type: none;
+  text-align: start;
+  background-color: #fff;
+  padding: 1rem;
+}
+.dropdownMenu li {
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+}
+.dropdownMenu li a {
+  color: #111 !important;
+}
+.dropdownMenu li:hover {
+  background-color: var(--blue);
+}
+.dropdownMenu li:hover a {
+  color: #fff;
+}
+.dropdownMenu.clicked {
+  display: none;
+}
+@media only screen and (max-width: 1024px) {
+  .dropdownMenu {
+    left: 34%;
+  }
+  .dropdownMenu li {
+    margin-bottom: 0.2rem;
+    padding: 0.3rem;
+  }
+}/*# sourceMappingURL=DropDown.css.map */

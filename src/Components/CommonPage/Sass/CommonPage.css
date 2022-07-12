@@ -1,0 +1,23 @@
+.withContent {
+  display: flex;
+}
+.withContent.left {
+  flex-direction: row;
+}
+@media only screen and (max-width: 1024px) {
+  .withContent.left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.withContent.right {
+  flex-direction: row-reverse;
+}
+@media only screen and (max-width: 1024px) {
+  .withContent.right {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}/*# sourceMappingURL=CommonPage.css.map */

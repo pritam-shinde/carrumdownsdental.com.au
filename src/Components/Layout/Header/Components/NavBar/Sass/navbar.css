@@ -1,0 +1,88 @@
+nav.navbar .navbar-brand {
+  width: 22%;
+}
+nav.navbar .navbar-nav li {
+  margin-right: 1.5rem;
+}
+nav.navbar .navbar-nav li .dropdown-menu li {
+  width: 100%;
+}
+nav.navbar .nav-menu {
+  width: 70vw;
+  display: flex;
+  text-align: center;
+  margin-right: 2.5rem;
+  justify-content: end;
+}
+nav.navbar .callBtn {
+  background-color: #115278 !important;
+}
+nav.navbar .callBtn a {
+  font-family: var(--heading-font) !important;
+  font-size: 1rem;
+}
+nav.navbar .dropdown:hover .dropdown-menu {
+  display: block;
+}
+nav.navbar .menu-icon {
+  display: none;
+}
+nav.navbar .dropdownListItem:hover .dropdownMenu {
+  display: block;
+}
+@media only screen and (max-width: 1024px) {
+  nav.navbar .navbar-brand {
+    width: 45%;
+    position: relative;
+    z-index: 2;
+  }
+  nav.navbar .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: -120%;
+    opacity: 1;
+    transition: all 0.5s ease;
+  }
+  nav.navbar .nav-menu.active {
+    background: #242222;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+    padding: 0.5rem 1rem;
+  }
+  nav.navbar .nav-menu.active .navbar-nav {
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+    padding-top: 4rem;
+    overflow: hidden;
+  }
+  nav.navbar .nav-menu.active .navbar-nav li {
+    width: 100%;
+    text-align: left;
+  }
+  nav.navbar .nav-menu.active .navbar-nav li #servicesDropdown, nav.navbar .nav-menu.active .navbar-nav li #aboutDropdown {
+    color: #fff;
+    font-size: 2rem;
+  }
+  nav.navbar .nav-menu.active .navbar-nav li a {
+    color: #fff;
+  }
+  nav.navbar .nav-menu.active .menu-icon {
+    color: #fff !important;
+  }
+  nav.navbar .menu-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    left: 3%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+}/*# sourceMappingURL=navbar.css.map */

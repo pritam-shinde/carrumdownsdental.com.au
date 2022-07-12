@@ -1,0 +1,26 @@
+#topbar #topbarWrapper {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+#topbar #topbarWrapper p, #topbar #topbarWrapper p span a {
+  font-size: 0.8rem;
+  font-family: var(--para-font);
+  color: rgba(255, 255, 255, 0.6823529412);
+  margin-right: 0.5rem;
+}
+#topbar #topbarWrapper p svg, #topbar #topbarWrapper p span a svg {
+  margin-right: 0.3rem;
+}
+#topbar #topbarWrapper svg {
+  fill: #115278 !important;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 1199px) {
+  #topbar {
+    display: none;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #topbar {
+    display: block;
+  }
+}/*# sourceMappingURL=topbar.css.map */

@@ -1,0 +1,68 @@
+.MuiCard-root {
+  position: relative;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+}
+.MuiCard-root.circleContainer {
+  height: 6rem;
+  width: 6rem;
+  padding: 5px;
+  border: 1px solid var(--blue);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.MuiCard-root.circleContainer .circle {
+  background-color: var(--blue);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.MuiCard-root.circleContainer .circle:hover {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.MuiCard-root .MuiCardContent-root h5 {
+  color: var(--blue);
+  font-family: var(--heading-font) !important;
+}
+.MuiCard-root .MuiCardContent-root p {
+  font-size: 0.98rem;
+  font-family: var(--para-font) !important;
+  color: #858585;
+}
+.MuiCard-root .MuiCardActions-root {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.MuiCard-root .MuiCardActions-root button a {
+  font-family: var(--heading-font) !important;
+  color: var(--blue) !important;
+  font-size: 1rem;
+}
+.MuiCard-root.grow:hover {
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}/*# sourceMappingURL=customcard.css.map */

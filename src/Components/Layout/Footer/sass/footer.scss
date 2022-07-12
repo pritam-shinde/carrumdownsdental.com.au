@@ -1,0 +1,32 @@
+footer {
+    & #footerContainer {
+        background-color: #1ebdb6;
+
+        & h5 {
+            font-family: var(--heading-font) !important;
+            font-size: 1.8rem !important;
+            color: var(--blue);
+        }
+
+        & ul li a, & p, & li {
+            color: #fff;
+            font-family: var(--para-font) !important;
+        }
+
+        & li strong{
+            color: var(--blue) !important;
+            font-family: var(--para-font) !important;
+        }
+    }
+
+    & #socialContainer{
+
+        & .MuiListItem-root{
+            margin-right: 0.5rem;
+            & svg{
+                font-size: 1.3rem;
+                color: var(--blue);
+            }
+        }
+    }
+}

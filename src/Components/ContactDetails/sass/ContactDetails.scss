@@ -1,0 +1,14 @@
+.ContactDetails {
+    border: 2px solid var(--light-green);
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    -ms-border-radius: 1.2rem;
+    -o-border-radius: 1.2rem;
+
+    &h5,
+    &h6 {
+        color: var(--blue) !important;
+        font-family: var(--heading-font) !important;
+    }
+}

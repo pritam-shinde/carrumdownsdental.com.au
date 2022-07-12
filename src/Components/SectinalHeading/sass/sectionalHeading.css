@@ -1,0 +1,42 @@
+.sectionalHeading h2 {
+  font-size: 1.8rem;
+  font-family: var(--heading-font) !important;
+}
+.sectionalHeading h3 {
+  font-size: 1.5rem;
+  font-family: var(--heading-font) !important;
+}
+.sectionalHeading h4 {
+  font-size: 1.3rem;
+  font-family: var(--heading-font) !important;
+}
+.sectionalHeading h5 {
+  font-size: 1rem;
+  font-family: var(--heading-font) !important;
+}
+.sectionalHeading h6 {
+  font-size: 0.8rem;
+  font-family: var(--heading-font) !important;
+}
+@media only screen and (max-width: 576px) {
+  .sectionalHeading h2 {
+    font-size: 1.6rem;
+    font-family: var(--heading-font) !important;
+  }
+  .sectionalHeading h3 {
+    font-size: 1.4rem;
+    font-family: var(--heading-font) !important;
+  }
+  .sectionalHeading h4 {
+    font-size: 1.2rem;
+    font-family: var(--heading-font) !important;
+  }
+  .sectionalHeading h5 {
+    font-size: 1rem;
+    font-family: var(--heading-font) !important;
+  }
+  .sectionalHeading h6 {
+    font-size: 0.8rem;
+    font-family: var(--heading-font) !important;
+  }
+}/*# sourceMappingURL=sectionalHeading.css.map */

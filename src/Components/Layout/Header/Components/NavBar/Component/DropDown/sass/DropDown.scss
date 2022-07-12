@@ -1,0 +1,42 @@
+.dropdownMenu {
+    position: absolute;
+    top: 4rem;
+    width: 14rem;
+    list-style-type: none;
+    text-align: start;
+    background-color: #fff;
+    padding: 1rem;
+
+    & li {
+        cursor: pointer;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+
+        & a {
+            color: #111 !important;
+        }
+
+        &:hover {
+            background-color: var(--blue);
+
+            & a {
+                color: #fff;
+            }
+        }
+    }
+
+    &.clicked {
+        display: none;
+    }
+
+    @media only screen and (max-width: 1024px){
+        &{
+            left: 34%;
+
+            & li{
+                margin-bottom: 0.2rem;
+                padding: 0.3rem;
+            }
+        }
+    }
+}

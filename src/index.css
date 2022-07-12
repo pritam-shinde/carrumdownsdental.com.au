@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --blue: #115278;
+  --light-green: #32cfc8;
+  --para-font: "Maven Pro", sans-serif;
+  --heading-font: "Playfair Display", serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  font-family: "Maven Pro", sans-serif !important;
+  word-wrap: break-word;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none !important;
+  color: #111;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--heading-font) !important;
+  color: var(--blue);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+h5 {
+  font-size: 0.83rem;
+}
+
+h6 {
+  font-size: 0.67rem;
+}
+
+.swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--blue);
+}
+
+@media only screen and (max-width: 600px) {
+
+  .swiper-button-prev::after,
+  .swiper-button-next::after {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--blue);
+  }
+}
+
+span.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  background-color: var(--light-green);
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.swiper-pagination-bullet {
+  border-radius: 0%;
+  -webkit-border-radius: 0%;
+  -moz-border-radius: 0%;
+  -ms-border-radius: 0%;
+  -o-border-radius: 0%;
+  width: 1rem;
+  height: 0.2rem;
+}
+
+
+li.MuiListItem-root,
+li.MuiListItem-root span {
+  margin-bottom: 0rem !important;
+}
+
+.customPara {
+  font-size: 1.2rem !important;
+  line-height: 1.8 !important;
+  margin-bottom: 1.1rem !important;
+  color: #5a5a5a;
+  font-family: var(--para-font);
+}
+
+.faq .sectionalHeading h2 {
+  font-size: 2rem;
+}
+
+.faq .sectionalHeading+.sectionalHeading h2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+  margin-top: 0.5rem;
+}
+
+.blogAction {
+  position: absolute;
+  bottom: 1%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qna h2 {
+  font-size: 1.5rem;
+}
+
+.customBtn {
+  background-color: #115278 !important;
+  padding: 0.8rem 1.6rem !important;
+  border-radius: 50rem !important;
+  color: #fff !important;
+}
+
+.ContactBubble__Bubble {
+  background-color: #115278 !important;
+}
+
+.ContactBubble__Bubble:hover {
+  background-color: var(--light-green) !important;
+}
+
+.GreySec {
+  background-color: #eee;
+  border-radius: 1.2rem !important;
+  -webkit-border-radius: 1.2rem !important;
+  -moz-border-radius: 1.2rem !important;
+  -ms-border-radius: 1.2rem !important;
+  -o-border-radius: 1.2rem !important;
+}
+
+.MuiCard-root img {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
+}
+
+
+.faq h3 {
+  font-size: 1.3rem;
+}
+
+.css-1p823my-MuiListItem-root {
+  align-items: flex-start !important;
+}
+
+.MuiListItemText-primary.css-10hburv-MuiTypography-root,
+.MuiListItemText-secondary {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  font-family: var(--para-font) !important;
+  font-size: 1.2rem !important;
+  color: #5a5a5a;
+  line-height: 1.5 !important;
+}
+
+div.MuiListItemText-root {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+.css-cveggr-MuiListItemIcon-root {
+  min-width: 1.8rem !important;
+}
+
+#address_footer li .MuiListItemText-root span, #address_footer li a .MuiListItemText-root span{
+  font-size: 1rem !important;
+  color: #fff;
+}

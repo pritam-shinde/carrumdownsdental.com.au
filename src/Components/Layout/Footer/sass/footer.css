@@ -1,0 +1,23 @@
+footer #footerContainer {
+  background-color: #1ebdb6;
+}
+footer #footerContainer h5 {
+  font-family: var(--heading-font) !important;
+  font-size: 1.8rem !important;
+  color: var(--blue);
+}
+footer #footerContainer ul li a, footer #footerContainer p, footer #footerContainer li {
+  color: #fff;
+  font-family: var(--para-font) !important;
+}
+footer #footerContainer li strong {
+  color: var(--blue) !important;
+  font-family: var(--para-font) !important;
+}
+footer #socialContainer .MuiListItem-root {
+  margin-right: 0.5rem;
+}
+footer #socialContainer .MuiListItem-root svg {
+  font-size: 1.3rem;
+  color: var(--blue);
+}/*# sourceMappingURL=footer.css.map */

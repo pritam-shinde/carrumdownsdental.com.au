@@ -18,7 +18,7 @@ const OurAdv = () => {
                                         <Grid container spacing={3}>
                                             {
                                                 data.map(item => <Grid item xs={12} sm={6} lg={3} key={item.id}>
-                                                    <CustomCard title={item.title} para={item.para} cardCls="bg-transparent shadow-none border-0" paraColor="#fff" iconContainer={true} icon={item.icon} align="center"  />
+                                                    <CustomCard title={item.title} para={item.para} cardCls="bg-transparent shadow-none border-0" paraColor="#fff" iconContainer={true} icon={item.icon} align="center" link={null} anchor={null} />
                                                 </Grid>)
                                             }
                                         </Grid>

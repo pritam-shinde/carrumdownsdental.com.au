@@ -22,8 +22,6 @@ const SimpleHero = ({ pageTitle, ppc, ppcText, blog, breadCrumb }) => {
     setWidth(window.innerWidth)
   }, [width]);
 
-  console.log(breadCrumb)
-
   return (
     <>
       <Container maxWidth="xxl" className={`banner ${classes.hero}`}>

@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { CommonPage } from "../Components/Components";
-import { Home, Services, Blogs, SingleBlog, Contact, BookNow, MultipleBlogPage, Category, MultipleCategory, ThankYou, PPC,  ChildBenefit, DentalImplant, Denture, TeethWhitening, CrownsNBridges, Veneers, Invisalign, RootCanal, ToothCleaning, DentalEmergency, ToothFilling, PrivacyPolicy, TNC, Offer } from "../Pages/Pages";
+import { Home, Services, Blogs, SingleBlog, Contact, BookNow, MultipleBlogPage, Category, MultipleCategory, ThankYou, PPC,  ChildBenefit, DentalImplant, Denture, TeethWhitening, CrownsNBridges, Veneers, Invisalign, RootCanal, ToothCleaning, DentalEmergency, ToothFilling, PrivacyPolicy, TNC, Offer, Error } from "../Pages/Pages";
 
 const Routing = () => {
   return (
@@ -58,6 +58,7 @@ const Routing = () => {
           {id: "route-49", path: "/privacy-policy/", element: <PrivacyPolicy />},
           {id: "route-50", path: "/terms-and-conditions/", element: <TNC />},
           {id: "route-51", path: "/offer/", element: <Offer />},
+          {id: "route-52", path: "404", element: <Error/>},
 
           ].map(item => <Route key={item.id} path={item.path} element={item.element} />)
         }

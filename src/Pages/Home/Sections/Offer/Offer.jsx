@@ -10,7 +10,7 @@ import offer3 from './images/3.jpg'
 const Offer = () => {
     return (
         <>
-                <section className='mb-md-5 mb-4 GreySec py-md-5 py-3'>
+            <section className='mb-md-5 mb-4 GreySec py-md-5 py-3'>
                 <Container maxWidth="xxl">
                     <Grid container>
                         <Grid item xs={11} md={10} className="mx-auto">
@@ -52,32 +52,32 @@ const Offer = () => {
                                                     paraText: null
                                                 }
                                             ].map(item => <Grid item xs={12} md={6} lg={4}>
-                                                <Card className="shadow">
+                                                <Card className="shadow" >
                                                     <CardMedia component="img" image={item.media} className="img-fluid" />
                                                     <CardContent>
-                                                        <Box style={{ height: "3.8rem" }}>
+                                                        <Box>
                                                             <SectionalHeading type={item.title[0].variant} title={item.title[0].text} />
                                                         </Box>
-                                                        <Box style={{ height: "16rem" }}>
-                                                        {
-                                                            item.paraText !== null ? <Typography>{item.paraText}</Typography> : null
-                                                        }
+                                                        <Box>
+                                                            {
+                                                                item.paraText !== null ? <Typography className='customPara'>{item.paraText}</Typography> : null
+                                                            }
                                                             <List>
                                                                 {
                                                                     item.list.map(item => <ListItemComp key={item.id} text={item.text} />)
                                                                 }
                                                             </List>
                                                         </Box>
-                                                        <Box mt={2}>
+                                                        <Box  style={{marginTop: item.id === "offer2" ? '1.7rem' : item.id === 'offer1' ? '2.2rem' : null}}>
                                                             <Button fullWidth className="customBtn" style={{ fontSize: "1.2rem", fontWeight: 700 }}>{item.price}</Button>
+                                                            <Typography align="center" style={{ color: "var(--blue)" }}>{item.para}</Typography>
                                                         </Box>
-                                                        <Typography align="center" style={{ color: "var(--blue)" }}>{item.para}</Typography>
                                                     </CardContent>
                                                 </Card>
                                             </Grid>)
                                         }
                                     </Grid>
-                                    <Box>
+                                    <Box className="text-md-right text-center">
                                         <TnCLink />
                                     </Box>
                                     <Box className="text-center mt-3">

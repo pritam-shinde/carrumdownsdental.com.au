@@ -65,6 +65,8 @@ const Veneers = () => {
                 <meta name="title" content="Porcelain Veneers Dentist | Best Dentist Carrum Downs" />
                 <meta name="description" content="Porcelain veneers are the perfect choice for improving your smiles. Carrum Downs Dental has the best dentists that perform smile makeovers at affordable costs." />
                 <title>Porcelain Veneers Dentist | Best Dentist Carrum Downs</title>
+                <link rel="canonical" href="/service/veneers/" />
+                <meta name="robots" content="index" />
             </Helmet>
             <SimpleHero pageTitle="Dental Veneers in Carrum Downs" breadCrumb={breadcrumb} />
             <main>

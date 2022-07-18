@@ -42,7 +42,7 @@ const ContactSec = () => {
                                                     </Box>)
                                                 }
                                             </Box>
-                                            <Box mt={3}>
+                                            <Box my={3}>
                                                 <BlueBtn anchor="https://goo.gl/maps/yV1SSF99M66q48zR7" title="Get Direction" />
                                             </Box>
                                         </Box>

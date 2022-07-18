@@ -1,7 +1,7 @@
 import { Container, Grid, Box, Card, CardMedia, CardContent, List, Button, Typography } from '@mui/material'
 import React from 'react'
 import { Helmet } from 'react-helmet';
-import { CustomCard, ListItemComp, SectionalHeading, SimpleHero } from '../../Components/Components';
+import {  ListItemComp, SectionalHeading, SimpleHero } from '../../Components/Components';
 import offer1 from './images/1.jpg'
 import offer2 from './images/2.jpg'
 import offer3 from './images/3.jpg'

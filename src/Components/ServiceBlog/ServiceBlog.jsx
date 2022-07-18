@@ -7,12 +7,12 @@ const ServiceBlog = ({ category }) => {
     const [group, setGroup] = useState([]);
     const [blogs, setBlogs] = useState([]);
     const wp = new WPAPI({
-        endpoint: 'https://carrumdownsdental.com.au/wp-json/',
+        endpoint: 'https://pritams3.sg-host.com/wp-json/',
     });
 
 
     const fetchCategory = async (category) => {
-        let cat = await wp.categories().slug(category).get();
+        let cat = await wp.categories().slug(category).auth({username: 'dentistadmin', password: 'hOzrbY#mnldy&)n%'}).get();
         setGroup(cat);
     }
 
@@ -35,7 +35,7 @@ const ServiceBlog = ({ category }) => {
                 <Grid container spacing={3}>
                 {
                     blogs ? blogs.slice(0,2).map(blog => <Grid item xs={12} md={6}>
-                        <CustomCard cardCls="shadow border-0 m-3" title={blog.title.rendered} para={`${blog.excerpt.rendered.split(" ").slice(0, 15).join(" ")} [...]`} featureImage={blog ? blog._embedded ? blog._embedded[`wp:featuredmedia`] ? blog._embedded[`wp:featuredmedia`][0] ? blog._embedded[`wp:featuredmedia`][0].source_url ? blog._embedded[`wp:featuredmedia`][0].source_url : null : null : null : null : null} date={`${months[Number(blog.date.split("T")[0].split("-")[1]) - 1]} ${blog.date.split("T")[0].split("-")[2]}, ${blog.date.split("T")[0].split("-")[0]}`} link={`/${blog.slug}/`} />
+                        <CustomCard cardCls="shadow border-0 m-3" title={blog.title.rendered} para={`${blog.excerpt.rendered.split(" ").slice(0, 15).join(" ")} [...]`} featureImage={blog ? blog._embedded ? blog._embedded[`wp:featuredmedia`] ? blog._embedded[`wp:featuredmedia`][0] ? blog._embedded[`wp:featuredmedia`][0].source_url ? blog._embedded[`wp:featuredmedia`][0].source_url : null : null : null : null : null} date={`${months[Number(blog.date.split("T")[0].split("-")[1]) - 1]} ${blog.date.split("T")[0].split("-")[2]}, ${blog.date.split("T")[0].split("-")[0]}`} link={`/${blog.slug}/`} anchor={null} />
                     </Grid>) : null
                 }
                 </Grid>

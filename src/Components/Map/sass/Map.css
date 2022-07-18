@@ -1,5 +1,5 @@
 .greenBorder {
-  border: 5px solid #ccc;
+  border: 5px solid var(--light-green);
   border-radius: 12% 44% 12% 44%;
   padding: 1rem;
 }

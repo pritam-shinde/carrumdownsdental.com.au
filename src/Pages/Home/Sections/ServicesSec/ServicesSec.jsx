@@ -15,7 +15,7 @@ const ServicesSec = () => {
                                 <Grid container spacing={3}>
                                     {
                                         Data.map(item => <Grid item key={item.id} xs={12} sm={6} lg={3}>
-                                            <CustomCard src={item.image} title={item.title} para={item.para} link={item.link} align="center" sec="home/service" cardCls="shadow border-none pt-3" />
+                                            <CustomCard src={item.image} title={item.title} para={item.para} link={item.link} align="center" sec="home/service" cardCls="shadow border-none pt-3" anchor={null} />
                                         </Grid>)
                                     }
                                 </Grid>

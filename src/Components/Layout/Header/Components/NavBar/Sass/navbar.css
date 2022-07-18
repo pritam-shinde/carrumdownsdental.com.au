@@ -2,7 +2,7 @@ nav.navbar .navbar-brand {
   width: 22%;
 }
 nav.navbar .navbar-nav li {
-  margin-right: 1.5rem;
+  margin-right: 1.1rem;
 }
 nav.navbar .navbar-nav li .dropdown-menu li {
   width: 100%;
@@ -12,7 +12,7 @@ nav.navbar .nav-menu {
   display: flex;
   text-align: center;
   margin-right: 2.5rem;
-  justify-content: end;
+  justify-content: flex-end;
 }
 nav.navbar .callBtn {
   background-color: #115278 !important;
@@ -35,6 +35,13 @@ nav.navbar .dropdownListItem:hover .dropdownMenu {
     width: 45%;
     position: relative;
     z-index: 2;
+    left: 4%;
+  }
+  nav.navbar .bluebtn {
+    background-color: #115278 !important;
+    padding: 0.4rem 1rem !important;
+    border-radius: 50rem !important;
+    margin: 0.3rem 1rem 0.3rem 0 !important;
   }
   nav.navbar .nav-menu {
     flex-direction: column;
@@ -80,7 +87,19 @@ nav.navbar .dropdownListItem:hover .dropdownMenu {
     cursor: pointer;
     position: absolute;
     z-index: 2;
-    left: 3%;
+    left: 0%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  nav.navbar .menu-icon {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    z-index: 2;
+    left: -3%;
     background-color: transparent;
     border: none;
     outline: none;

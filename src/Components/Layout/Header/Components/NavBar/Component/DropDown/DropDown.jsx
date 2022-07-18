@@ -15,8 +15,8 @@ const DropDown = ({ menu, closeMobileMenu }) => {
             <ul onClick={handleOnClick} className={`${click ? 'dropdownMenu clicked' : 'dropdownMenu'} shadow`}>
                 {
                     menu === "about" ?
-                        [{ id: "about-menu-1", title: "Patient Referral Program", path: "/payment-plan/" }, { id: "about-menu-2", title: "Payment Plans", path: "/referral-program/" }, { id: "about-menu-3", title: "New Technologies", path: "/new-technologies/" }].map(item => <li key={item.id}>
-                            <NavLink to={item.path} onClick={() => setClick(false)}>{item.title}</NavLink>
+                        [{ id: "about-menu-1", title: "Patient Referral Program", path: "/referral-program/" }, { id: "about-menu-2", title: "Payment Plans", path: "/payment-plan/" }, { id: "about-menu-3", title: "New Technologies", path: "/new-technologies/" }].map(item => <li key={item.id}>
+                            <NavLink to={item.path} onClick={() => {setClick(false); closeMobileMenu()}}>{item.title}</NavLink>
                         </li>)
                         : menu === "services" ?
                             [{ id: "service-menu-1", title: "Wisdom Teeth Removal", path: "/service/wisdom-teeth-removal/" },

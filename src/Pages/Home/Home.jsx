@@ -33,6 +33,8 @@ const Home = () => {
         <meta name="title" content="Trusted Family Dentist in Carrum Downs | Carrum Downs Dental Clinic" />
         <meta name="description" content="Experience the best dental treatment from Carrum Downs Dental Group. Our Dentist knowledge and skills will provide you all Dental Care under one roof." />
         <title>Trusted Family Dentist in Carrum Downs | Carrum Downs Dental Clinic</title>
+        <link rel="canonical" href="/" />
+        <meta name="robots" content="index" />
       </Helmet>
       <main id="home">
         {/* <PopupComp /> */}

@@ -4,7 +4,7 @@ import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
 import MuiAccordion from '@mui/material/Accordion';
 import MuiAccordionSummary from '@mui/material/AccordionSummary';
 import MuiAccordionDetails from '@mui/material/AccordionDetails';
-import React, { useState } from 'react'
+import React from 'react'
 import { Helmet } from 'react-helmet'
 import { BookNow, SectionalHeading, Sidebar, SimpleHero, ListItemComp, PaymentOpt, InterestFree, BlueBtn, ServiceBlog, TnCLink } from '../../../../Components/Components';
 import childBenefitImg from './images/close-up-boy-dentist.41e0e9504e92a363b8e5.jpg'
@@ -59,6 +59,8 @@ const ChildBenefit = () => {
         <meta name="title" content="Child Dentist Carrum Downs | CDBS Carrum Downs | Child Benefit" />
         <meta name="description" content="CDBS schedule allows child dental services for the kids between 2-17 years. Child dentists in Carrum Downs carry out the dental treatment very gently." />
         <title>Child Dentist Carrum Downs | CDBS Carrum Downs | Child Benefit</title>
+        <link rel="canonical" href="/service/child-benefit/" />
+        <meta name="robots" content="index" /> 
       </Helmet>
       <SimpleHero pageTitle="Child Benefit" breadCrumb={breadcrumb}  />
       <main>

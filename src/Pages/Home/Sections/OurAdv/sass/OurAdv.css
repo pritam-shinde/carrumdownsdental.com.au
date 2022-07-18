@@ -12,11 +12,11 @@
 }
 @media only screen and (max-width: 600px) {
   #ourAdvSec .img2 {
-    margin-top: -4.1%;
+    margin-top: -5%;
   }
 }
 @media only screen and (min-width: 601px) and (max-width: 900px) {
   #ourAdvSec .img2 {
-    margin-top: -0.7%;
+    margin-top: -0.8%;
   }
 }/*# sourceMappingURL=OurAdv.css.map */

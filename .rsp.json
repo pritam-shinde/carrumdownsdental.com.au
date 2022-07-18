@@ -1,0 +1,50 @@
+{
+    "port": 3000,
+    "buildDirectory": "./build",
+    "engine": {
+      "launchOptions": {
+        "args": ["--no-sandbox", "--disable-setuid-sandbox"],
+        "product": "chrome",
+        "headless": true,
+        "ignoreHTTPSErrors": true
+      },
+      "gotoOptions": {
+        "timeout": 0
+      }
+    },
+    "routes": [
+      "/",
+      "/about-us/",
+      "/referral-program/",
+      "/payment-plan/",
+      "/new-technologies/",
+      "/service/",
+      "/service/wisdom-teeth-removal/",
+      "/service/child-benefit/",
+      "/service/dental-implants/",
+      "/service/dentures/",
+      "/service/teeth-whitening/",
+      "/service/crowns-and-bridge/",
+      "/service/veneers/",
+      "/service/teeth-aligners/",
+      "/service/root-canal/",
+      "/service/teeth-cleaning/",
+      "/service/dental-emergency/",
+      "/service/tooth-fillings/",
+      "/blog/",
+      "/contact-us/",
+      "/how-we-can-reduce-the-spread-of-corona-virus-together/",
+      "/book-now/",
+      "/privacy-policy/",
+      "/terms-and-conditions/",
+      "/get-painless-dental-treatment-at-skye/",
+      "/get-the-best-dental-care-at-sandhurst/",
+      "/affordable-dental-services-at-patterson-lakes/",
+      "/we-are-your-go-to-dentist-in-cranbourne-west/",
+      "/looking-for-a-dentist-in-frankston-north/",
+      "/find-the-best-dentist-in-seaford/",
+      "/get-all-your-dental-needs-handled-in-lyndhurst/",
+      "/affordable-dental-services-at-langwarrin/",
+      "/offer/"
+    ]
+  }

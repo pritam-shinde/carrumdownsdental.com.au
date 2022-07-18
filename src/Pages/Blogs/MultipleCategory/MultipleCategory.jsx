@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import WPAPI from 'wpapi';
 import { useParams } from 'react-router-dom';
 import { SimpleHero, CustomCard, BlueBtn } from '../../../Components/Components';
-import { Container, Grid, Box } from '@mui/material';
+import { Container, Grid, Box, LinearProgress, Typography } from '@mui/material';
 import { RecentPostNCat } from '../Components/Components';
 import { Helmet } from 'react-helmet';
 import { XMasonry, XBlock } from 'react-xmasonry';
@@ -15,11 +15,11 @@ const MultipleCategory = () => {
     const { category, pageNo } = useParams();
 
     const wp = new WPAPI({
-        endpoint: 'https://carrumdownsdental.com.au/wp-json/',
+        endpoint: 'https://pritams3.sg-host.com/wp-json/',
     });
 
     const fetchCategory = async () => {
-        let cat = await wp.categories().slug(category).get();
+        let cat = await wp.categories().slug(category).auth({ username: 'dentistadmin', password: 'hOzrbY#mnldy&)n%' }).get();
         setGroup(cat)
     }
 
@@ -40,20 +40,22 @@ const MultipleCategory = () => {
 
     useEffect(() => {
         if (group && group[0] && group[0].id) {
-          const breadcrumb = [{ id: `breadcrumb-${group[0].id}.1`, link: "/blog/", text: "BLOG" }, { id: `breadcrumb-${group[0].id}.2`, link: null, text: group[0].name }];
-          setBreadCrumb(breadcrumb)
+            const breadcrumb = [{ id: `breadcrumb-${group[0].id}.1`, link: "/blog/", text: "BLOG" }, { id: `breadcrumb-${group[0].id}.2`, link: null, text: group[0].name }];
+            setBreadCrumb(breadcrumb)
         }
-      }, [group])
+    }, [group])
 
     return (
         <>
-        <Helmet>
-        <meta name="title" content={`${group ? group[0] ? group[0].name ? group[0].name : null : null : null} | ${pageNo ? pageNo : null}`} />
-        <meta name="description" content={pageNo ? pageNo : null} />
-        <title>{`${group ? group[0] ? group[0].name ? group[0].name : null : null : null} | ${pageNo ? pageNo : null}`}</title>
-      </Helmet>
+            <Helmet>
+                <meta name="title" content={`${group ? group[0] ? group[0].name ? group[0].name : null : null : null} | ${pageNo ? pageNo : null}`} />
+                <meta name="description" content={pageNo ? pageNo : null} />
+                <title>{`${group ? group[0] ? group[0].name ? group[0].name : null : null : null} | ${pageNo ? pageNo : null}`}</title>
+                <link rel="canonical" href={group ? group[0] ? group[0].slug ? `/category/${category}/page/${pageNo}` : '/blog/' : '/blog/' : '/blog/'} />
+                <meta name="robots" content="index" />
+            </Helmet>
             <SimpleHero pageTitle={group ? group[0] ? group[0].name ? group[0].name : null : null : null} breadCrumb={breadCrumb} />
-            <main>
+            {blogs.length > 0 && group.length > 0 ? <main>
                 <section>
                     <Container maxWidth="xxl">
                         <Grid container>
@@ -67,7 +69,7 @@ const MultipleCategory = () => {
                                                         <XMasonry maxColumns={2} responsive targetBlockWidth={400}>
                                                             {
                                                                 blogs.length > 0 ? blogs.map(blog => <XBlock>
-                                                                    <CustomCard cardCls="shadow border-0 m-3" title={blog.title.rendered} para={`${blog.excerpt.rendered.split(" ").slice(0, 15).join(" ")} [...]`} featureImage={blog ? blog._embedded ? blog._embedded[`wp:featuredmedia`] ? blog._embedded[`wp:featuredmedia`][0] ? blog._embedded[`wp:featuredmedia`][0].source_url ? blog._embedded[`wp:featuredmedia`][0].source_url : null : null : null : null : null} date={`${months[Number(blog.date.split("T")[0].split("-")[1]) - 1]} ${blog.date.split("T")[0].split("-")[2]}, ${blog.date.split("T")[0].split("-")[0]}`} link={`/${blog.slug}/`} />
+                                                                    <CustomCard cardCls="shadow border-0 m-3" title={blog.title.rendered} para={`${blog.excerpt.rendered.split(" ").slice(0, 15).join(" ")} [...]`} featureImage={blog ? blog._embedded ? blog._embedded[`wp:featuredmedia`] ? blog._embedded[`wp:featuredmedia`][0] ? blog._embedded[`wp:featuredmedia`][0].source_url ? blog._embedded[`wp:featuredmedia`][0].source_url : null : null : null : null : null} date={`${months[Number(blog.date.split("T")[0].split("-")[1]) - 1]} ${blog.date.split("T")[0].split("-")[2]}, ${blog.date.split("T")[0].split("-")[0]}`} link={`/${blog.slug}/`} anchor={null} />
                                                                 </XBlock>) : null
                                                             }
                                                         </XMasonry>
@@ -79,7 +81,7 @@ const MultipleCategory = () => {
                                                                 pageNo !== '2' ? blogs ? blogs._paging ? blogs._paging.links ? blogs._paging.links.prev ? <BlueBtn functionality={true} cls="mx-3" link={`/category/${category}/page/${blogs._paging.links.prev.split('page=')[1]}/`} title="Prev" /> : null : null : null : null : null
                                                             }
                                                             {
-                                                                blogs ? blogs._paging ? blogs._paging.links ? blogs._paging.links.next ? <BlueBtn functionality={true} link={`/category/${category}/page/${blogs._paging.links.next.split('page=')[1]}/`} title="Next"  /> : null : null : null : null
+                                                                blogs ? blogs._paging ? blogs._paging.links ? blogs._paging.links.next ? <BlueBtn functionality={true} link={`/category/${category}/page/${blogs._paging.links.next.split('page=')[1]}/`} title="Next" /> : null : null : null : null
                                                             }
                                                         </Box>
                                                     </Box>
@@ -95,7 +97,13 @@ const MultipleCategory = () => {
                         </Grid>
                     </Container>
                 </section>
-            </main>
+            </main> : <Container style={{ height: "40vh" }} className="d-flex justify-content-center align-items-center">
+                <Box sx={{ width: '100%' }}>
+                    <LinearProgress />
+                    <Typography variant="h4" align="center">Please Wait...</Typography>
+                </Box>
+            </Container>
+            }
         </>
     )
 }

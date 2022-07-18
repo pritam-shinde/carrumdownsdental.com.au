@@ -1,4 +1,4 @@
-import { Container, Grid, Box } from '@mui/material';
+import { Container, Grid, Box, LinearProgress, Typography } from '@mui/material';
 import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet';
 import { useParams } from 'react-router-dom';
@@ -13,7 +13,7 @@ const Category = () => {
   const [breadCrumb, setBreadCrumb] = useState([])
   const { category } = useParams();
   const wp = new WPAPI({
-    endpoint: 'https://carrumdownsdental.com.au/wp-json/',
+    endpoint: 'https://pritams3.sg-host.com/wp-json/',
   });
 
 
@@ -46,12 +46,14 @@ const Category = () => {
   return (
     <>
       <Helmet>
-        <meta name="title" content={group ? group[0] ? group[0].name ? group[0].name : null : null : null} />
+        <meta name="title" content={group ? group[0] ? group[0].name ? group[0].name : 'blog' : 'blog' : 'blog'} />
         <meta name="description" content="" />
-        <title>{group ? group[0] ? group[0].name ? group[0].name : null : null : null}</title>
+        <title>{group ? group[0] ? group[0].name ? group[0].name : 'blog' : 'blog' : 'blog'}</title>
+        <link rel="canonical" href={group ? group[0] ? group[0].slug ? `/category/${category}/` : '/blog/' : '/blog/' : '/blog/'} />
+        <meta name="robots" content="index" />
       </Helmet>
-      <SimpleHero pageTitle={group ? group[0] ? group[0].name ? group[0].name : null : null : null} breadCrumb={breadCrumb} />
-      <main>
+      <SimpleHero pageTitle={group ? group[0] ? group[0].name ? group[0].name : '/blog/' : 'blog' : 'blog'} breadCrumb={breadCrumb ? breadCrumb : null} />
+      {group && blogs ? <main>
         <section>
           <Container maxWidth="xxl">
             <Grid container>
@@ -89,7 +91,12 @@ const Category = () => {
             </Grid>
           </Container>
         </section>
-      </main>
+      </main> : <Container style={{ height: "40vh" }} className="d-flex justify-content-center align-items-center">
+          <Box sx={{ width: '100%' }}>
+            <LinearProgress />
+            <Typography variant="h4" align="center">Please Wait...</Typography>
+          </Box>
+        </Container>}
     </>
   )
 }

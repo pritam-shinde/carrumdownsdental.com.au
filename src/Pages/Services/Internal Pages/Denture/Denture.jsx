@@ -64,6 +64,8 @@ const Denture = () => {
                 <meta name="title" content="Dentures in Carrum Downs | Carrum Downs Dental Group Clinic" />
                 <meta name="description" content="Dentist in Carrum Downs Dental Group has extensive denture experience that satisfies every patient’s denture needs. We provide high quality of dentures." />
                 <title>Dentures in Carrum Downs | Carrum Downs Dental Group Clinic</title>
+                <meta name="robots" content="index" />
+                <link rel="canonical" href="/service/dentures/" />
             </Helmet>
             <SimpleHero pageTitle="Dentures in Carrum Downs" breadCrumb={breadcrumb} />
             <main>

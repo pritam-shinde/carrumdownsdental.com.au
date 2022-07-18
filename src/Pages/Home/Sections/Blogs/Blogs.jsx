@@ -8,7 +8,7 @@ const Blogs = () => {
     const [blogs, setBlogs] = useState([]);
 
     const wp = new WPAPI({
-        endpoint: 'https://carrumdownsdental.com.au/wp-json/',
+        endpoint: 'https://pritams3.sg-host.com/wp-json/',
     });
 
     const fetchBlogs = async () => {
@@ -35,7 +35,7 @@ const Blogs = () => {
                                         {
                                             blogs.map(blog => {
                                                 return <Grid item xs={12} sm={4} key={blog.id}>
-                                                    <CustomCard cardCls="shadow border-0" title={blog.title.rendered} para={`${blog.excerpt.rendered.split(" ").slice(0, 20).join(" ")} [...]`} featureImage={blog ? blog._embedded ? blog._embedded[`wp:featuredmedia`] ? blog._embedded[`wp:featuredmedia`][0] ? blog._embedded[`wp:featuredmedia`][0].source_url ? blog._embedded[`wp:featuredmedia`][0].source_url : null : null : null : null : null} sec="home/blog" date={`${months[Number(blog.date.split("T")[0].split("-")[1]) - 1]} ${blog.date.split("T")[0].split("-")[2]}, ${blog.date.split("T")[0].split("-")[0]}`} link={`/${blog.slug}/`} />
+                                                    <CustomCard cardCls="shadow border-0" title={blog.title.rendered} para={`${blog.excerpt.rendered.split(" ").slice(0, 20).join(" ")} [...]`} featureImage={blog ? blog._embedded ? blog._embedded[`wp:featuredmedia`] ? blog._embedded[`wp:featuredmedia`][0] ? blog._embedded[`wp:featuredmedia`][0].source_url ? blog._embedded[`wp:featuredmedia`][0].source_url : null : null : null : null : null} sec="home/blog" date={`${months[Number(blog.date.split("T")[0].split("-")[1]) - 1]} ${blog.date.split("T")[0].split("-")[2]}, ${blog.date.split("T")[0].split("-")[0]}`} link={`/${blog.slug}/`} anchor={null} />
                                                 </Grid>
                                             })
                                         }

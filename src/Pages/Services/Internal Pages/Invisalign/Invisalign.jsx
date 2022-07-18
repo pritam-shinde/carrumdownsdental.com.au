@@ -64,6 +64,8 @@ const Invisalign = () => {
                 <meta name="title" content="Teeth Aligners by Carrum Downs Dental Group | Dentist in Skye" />
                 <meta name="description" content="Carrum Downs Dental Group has the best dentist in the Carrum Downs that provide high quality teeth aligners which makes you smile more pleasant." />
                 <title>Teeth Aligners by Carrum Downs Dental Group | Dentist in Skye</title>
+                <link rel="canonical" href="/service/teeth-aligners/" />
+                <meta name="robots" content="index" />
             </Helmet>
             <SimpleHero pageTitle="Invisalign" breadCrumb={breadcrumb} />
             <main>

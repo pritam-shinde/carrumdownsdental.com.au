@@ -32,6 +32,8 @@ const CommonPage = ({ contactDetails }) => {
         <meta name="title" content={pageData ? pageData[0] ? pageData[0].seo ? pageData[0].seo[0] ? pageData[0].seo[0].title ? pageData[0].seo[0].title : null : null : null : null : null} />
         <meta name="description" content={pageData ? pageData[0] ? pageData[0].seo ? pageData[0].seo[0] ? pageData[0].seo[0].description ? pageData[0].seo[0].description : null : null : null : null : null} />
         <title>{pageData ? pageData[0] ? pageData[0].seo ? pageData[0].seo[0] ? pageData[0].seo[0].title ? pageData[0].seo[0].title : null : null : null : null : null}</title>
+        <meta name="robots" content="index" />
+        <link rel="canonical" href={`/${location.pathname}/`} />
       </Helmet>
       <SimpleHero pageTitle={pageData ? pageData[0] ? pageData[0].pageTitle ? pageData[0].pageTitle : null : null : null} breadCrumb={breadcrumbList}  />
       <main>

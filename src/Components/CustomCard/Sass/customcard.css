@@ -44,7 +44,7 @@
   font-family: var(--heading-font) !important;
 }
 .MuiCard-root .MuiCardContent-root p {
-  font-size: 0.98rem;
+  font-size: 1rem;
   font-family: var(--para-font) !important;
   color: #858585;
 }

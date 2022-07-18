@@ -28,4 +28,5 @@ export {default as PrivacyPolicy} from './PrivacyPolicy/PrivacyPolicy';
 export {default as TNC} from './TNC/TNC';
 export {default as Offer} from './Offer/Offer';
 
-export { default as PPC } from './PPC/PPC'
+export { default as PPC } from './PPC/PPC';
+export {default as Error} from './Error/Error';

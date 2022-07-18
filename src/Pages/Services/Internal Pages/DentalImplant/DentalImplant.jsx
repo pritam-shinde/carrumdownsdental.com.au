@@ -63,6 +63,8 @@ const DentalImplant = () => {
                 <meta name="title" content="Dental Implants in Carrum Downs | Dentist in Carrum Downs" />
                 <meta name="description" content="Dental Implants are an effective way to deal with tooth loss. Our dental implants are made from Titanium. Call us today for your dental implants treatment." />
                 <title>Dental Implants in Carrum Downs | Dentist in Carrum Downs</title>
+                <link rel="canonical" href="/service/dental-implants/" />
+                <meta name="robots" content="index" />
             </Helmet>
             <SimpleHero pageTitle='Dental Implants in Carrum Downs' breadCrumb={breadcrumb} />
             <main>

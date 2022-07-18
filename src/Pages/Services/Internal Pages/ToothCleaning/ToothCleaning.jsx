@@ -61,6 +61,8 @@ const ToothCleaning = () => {
                 <meta name="title" content="Professional Dental Scale and Clean | Carrum Downs Dentist" />
                 <meta name="description" content="We offer a highly professional dental Scaling & Cleaning service which is tailored to the individual and will ensure the safe treatment and impressive results." />
                 <title>Professional Dental Scale and Clean | Carrum Downs Dentist</title>
+                <link rel="canonical" href="/service/teeth-cleaning/" />
+                <meta name="robots" content="index" />
             </Helmet>
             <SimpleHero pageTitle="Teeth Cleaning in Carrum Downs" breadCrumb={breadcrumb} />
             <main>

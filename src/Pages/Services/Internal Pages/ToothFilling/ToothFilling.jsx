@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Box, Container, Grid, List, Typography } from '@mui/material'
 import { Helmet } from 'react-helmet'
 import { BookNow, SectionalHeading, Sidebar, SimpleHero, ListItemComp, PaymentOpt, InterestFree, BlueBtn, ServiceBlog } from '../../../../Components/Components';
@@ -61,6 +61,8 @@ const ToothFilling = () => {
                 <meta name="title" content="Tooth Fillings | Carrum Downs Dentist" />
                 <meta name="description" content="Your teeth will be restored to a natural look and feel. Our experienced dentists in Carrum Downs are specialized in tooth fillings. Call us now!" />
                 <title>Tooth Fillings | Carrum Downs Dentist</title>
+                <link rel="canonical" href="/service/tooth-fillings/" />
+                <meta name="robots" content="index" />
             </Helmet>
             <SimpleHero pageTitle="Tooth Fillings" breadCrumb={breadcrumb} />
             <main>

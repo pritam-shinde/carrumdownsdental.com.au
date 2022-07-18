@@ -1,1 +1,5 @@
+User-agent: *
+Disallow: /wp-admin/
+Disallow: /wp-includes/sodium_compat/
+
 Sitemap: https://carrumdownsdental.com.au/sitemap.xml

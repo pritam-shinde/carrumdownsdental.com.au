@@ -117,7 +117,7 @@ li.MuiListItem-root span {
 }
 
 .customPara {
-  font-size: 1.2rem !important;
+  font-size: 1.1rem !important;
   line-height: 1.8 !important;
   margin-bottom: 1.1rem !important;
   color: #5a5a5a;
@@ -194,9 +194,9 @@ li.MuiListItem-root span {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
   font-family: var(--para-font) !important;
-  font-size: 1.2rem !important;
+  font-size: 1rem !important;
   color: #5a5a5a;
-  line-height: 1.5 !important;
+  line-height: 1.3 !important;
 }
 
 div.MuiListItemText-root {
@@ -211,4 +211,29 @@ div.MuiListItemText-root {
 #address_footer li .MuiListItemText-root span, #address_footer li a .MuiListItemText-root span{
   font-size: 1rem !important;
   color: #fff;
+}
+
+.css-yb0lig{
+  font-weight: 700;
+}
+
+@media only screen and (max-width: 600px){
+  #podium-bubble{
+    position: fixed;
+    right: -1.5rem !important;
+    left: unset;
+    bottom: 4.438rem !important;
+    top: unset;
+    width: 100%;
+    height: 100%;
+    z-index: 2147482997;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: transparent;
+    background-image: none;
+    display: block;
+    max-width: 100px;
+    max-height: 100px;
+  }
 }

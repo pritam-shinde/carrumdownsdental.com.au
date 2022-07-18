@@ -2,7 +2,6 @@ import { Container, Grid, Box, Typography, List } from '@mui/material'
 import React, { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import { BookNow, Sidebar, SimpleHero, InterestFree, SectionalHeading, ServiceBlog, PaymentOpt, ListItemComp, BlueBtn } from '../../../../Components/Components';
-import { Add, Remove } from '@mui/icons-material';
 import crownBridges from './images/defective-large-old-fillings-993x1024.jpg';
 import { styled } from '@mui/material/styles';
 import ArrowForwardIosSharpIcon from '@mui/icons-material/ArrowForwardIosSharp';
@@ -61,7 +60,7 @@ const CrownsNBridges = () => {
         setExpanded(newExpanded ? panel : false);
     };
 
-    const breadcrumb= [{ id: "breadcrumb-3.1", link: "/service/", text: "SERVICES" }, { id: "breadcrumb-3.2", link: null, text: "CROWNS AND BRIDGE IN CARRUM DOWNS" }]
+    const breadcrumb = [{ id: "breadcrumb-3.1", link: "/service/", text: "SERVICES" }, { id: "breadcrumb-3.2", link: null, text: "CROWNS AND BRIDGE IN CARRUM DOWNS" }]
 
     return (
         <>
@@ -69,6 +68,8 @@ const CrownsNBridges = () => {
                 <meta name="title" content="Crown & Bridge in Carrum Downs | Carrum Downs Dental Clinic" />
                 <meta name="description" content="Crowns and Bridges restore damaged and missing teeth. We have the best dentist in Carrum Downs that provide the greatest dental services. Contact us today!" />
                 <title>Crown & Bridge in Carrum Downs | Carrum Downs Dental Clinic</title>
+                <link rel="canonical" href="/service/crowns-and-bridge/" />
+                <meta name="robots" content="index" />
             </Helmet>
             <SimpleHero pageTitle="Crowns and bridge in Carrum Downs" breadCrumb={breadcrumb} />
             <main>

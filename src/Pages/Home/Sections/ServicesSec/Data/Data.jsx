@@ -16,21 +16,24 @@ const Data = [
         title:"Dental - Implants",
         para:"Renew your smile and chewing ability. We offer complete implant procedure including Implant, Abutment and Crown.",
         image: DentalImplant,
-        link: '/service/dental-implants/'
+        link: '/service/dental-implants/',
+        anchor: null
     },
     {
         id:"serviceSec-3",
         title:"Child Benefit",
         para:"Eligible Kids can get up to $1000* worth of Free dental services.",
         image: ChildDentistry,
-        link: '/service/child-benefit/'
+        link: '/service/child-benefit/',
+        anchor: null
     },
     {
         id:"serviceSec-4",
         title:"Denture",
         para:"You don’t have to live with missing teeth. At Carrum Downs Dental we have affordable denture options.",
         image: Denture,
-        link: '/service/denture/'
+        link: '/service/denture/',
+        anchor: null
     }
 ];
 

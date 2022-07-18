@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Box, Container, Grid, List, Typography } from '@mui/material'
 import { Helmet } from 'react-helmet'
 import { BookNow, SectionalHeading, Sidebar, SimpleHero, ListItemComp, PaymentOpt, InterestFree, BlueBtn, ServiceBlog } from '../../../../Components/Components';
@@ -62,6 +62,8 @@ const DentalEmergency = () => {
                 <meta name="title" content="Dental Emergency in and around Carrum Downs & other Suburbs" />
                 <meta name="description" content="If you are in a dental emergency and in need of immediate dental care, please call our clinic on (03) 8899 6367 to book your dental appointment." />
                 <title>Dental Emergency in and around Carrum Downs & other Suburbs</title>
+                <meta name="robots" content="index" />
+                <link rel="canonical" href="/service/dental-emergency/" />
             </Helmet>
             <SimpleHero pageTitle="Dental Emergency in Carrum Downs" breadCrumb={breadcrumb} />
             <main>

@@ -5,6 +5,10 @@ import Logo from './images/logo.svg'
 import './Sass/navbar.css';
 import { useEffect, useState } from 'react';
 import { DropDown } from './Component/Component';
+import { BlueBtn } from '../../../../Components'
+import { FaPhoneAlt } from 'react-icons/fa';
+
+
 
 
 const NavBar = ({ scrollHeight }) => {
@@ -26,7 +30,7 @@ const NavBar = ({ scrollHeight }) => {
     })
   });
 
- 
+
 
   const closeMobileMenu = () => {
     setClicked(false)
@@ -48,7 +52,7 @@ const NavBar = ({ scrollHeight }) => {
           <Menu />
         </Button>
         <NavLink to="/" className="navbar-brand mr-md-auto mx-auto">
-          <img src={Logo} alt="" className='img-fluid' style={{borderRadius: 0}} loading="lazy"  />
+          <img src={Logo} alt="" className='img-fluid' style={{ borderRadius: 0 }} loading="lazy" />
         </NavLink>
         <Box className="collapse navbar-collapse customization" id="navbarSupportedContent">
           <ul className="navbar-nav mx-auto">
@@ -93,8 +97,9 @@ const NavBar = ({ scrollHeight }) => {
             </li>
           </ul>
           {
-              location.pathname !== '/book-now/' ? <Button className='callBtn rounded-pill btn-lg px-3 py-2 shadow' ><NavLink to="/book-now/" className="text-white">Book Now</NavLink></Button> : null
-            }
+            location.pathname !== '/book-now/' ? <Button className='callBtn rounded-pill btn-lg shadow mr-2' ><NavLink to="/book-now/" className="text-white">Book Now</NavLink></Button> : null
+          }
+          <Button className='callBtn rounded-pill btn-lg shadow mr-2' ><a href="tel:03-9782 1200" className="text-white">03-9782 1200</a></Button>
         </Box>
       </nav>
         :
@@ -105,6 +110,10 @@ const NavBar = ({ scrollHeight }) => {
           <NavLink to="/" className="navbar-brand mr-md-auto mx-auto">
             <img src={Logo} alt="" className='img-fluid' loading="lazy" />
           </NavLink>
+          {
+            location.pathname !== '/book-now/' ? <Button className='callBtn rounded-pill btn-lg shadow mr-3' ><NavLink to="/book-now/" className="text-white" style={{fontSize:"0.8rem"}}>Book Now</NavLink></Button> : null
+          }
+          <button className='button border-0 outline-0 shadow mr-3 d-flex justify-content-center align-items-center' style={{borderRadius:"50%", backgroundColor:"var(--blue)", height:"2rem", width:"2rem"}} ><a href="tel:03-9782 1200" className="text-white" style={{fontSize:"0.8rem"}}><FaPhoneAlt className='text-white' /></a></button>
           <Box className={`${clicked ? 'nav-menu active' : 'nav-menu'}`}>
             <ul className='navbar-nav mob'>
               <li className="nav-item">

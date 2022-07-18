@@ -9,9 +9,11 @@ const Services = () => {
   return (
     <>
       <Helmet>
-        <meta name="title" content="Services |" />
-        {/* <meta name="description" content="" /> */}
-        <title>Services |</title>
+        <meta name="title" content="Dental Health Services Carrum Downs | Carrum Downs Dental" />
+         <meta name="description" content="Carrum Downs Dental offers wisdom teeth extraction, dental implants, teeth whitening, dentures, root canal, & other services in Carrum Downs, you can count on Us." /> 
+        <title>Dental Health Services Carrum Downs | Carrum Downs Dental</title>
+        <link rel="canonical" href="/service/" />
+        <meta name="robots" content="index" />
       </Helmet>
       <SimpleHero pageTitle="Services" />
       <main id="servicesPage">
@@ -23,7 +25,7 @@ const Services = () => {
                   <Grid container spacing={3} >
                     {
                       Data.map(service=><Grid item xs={12} md={6} lg={4} >
-                        <CustomCard title={service.title} para={service.excerpt} cardCls="bg-transparent shadow p-3" paraColor="#111" iconContainer={true} icon={service.image} align="center" link={service.link} manageHeight={true} sec="servicePage" />
+                        <CustomCard title={service.title} para={service.excerpt} cardCls="bg-transparent shadow p-3" paraColor="#111" iconContainer={true} icon={service.image} align="center" link={service.link} anchor={service.anchor} manageHeight={true} sec="servicePage" />
                       </Grid>
                       )
                     }
